@@ -33,6 +33,11 @@ var defaultAliases = {
 };
 
 function obfuscate(originalData) {
+	//eliminate trailing "s"es
+	if (originalData.charAt(originalData.length-1).toLowerCase() == "s") {
+		originalData = originalData.substr(0, originalData.length-1);
+	}
+	
 	var amount = parseInt(originalData.split(' ')[0]);
 	var originalUnit = originalData.substr(amount.toString().length+1);
 
