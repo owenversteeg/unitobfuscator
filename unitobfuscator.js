@@ -66,5 +66,5 @@ function obfuscate(originalData) {
 	}
 
 	//return amount + ' ('+textTop+'s)/('+textBottom+'s)';
-	return amount + ' ' + textTop + ' per ' + textBottom;
+	return amount + ' ' + textTop + 's per ' + textBottom;
 }
